@@ -1,12 +1,13 @@
-
-import { Tabs } from "antd";
+import {Tabs} from "antd";
 import Cocktail from "./Cocktail";
 import Whisky from "./Whisky";
 import NonAlcohol from "./NonAlcohol";
+
 export default () => <>
     <Tabs
         style={{
-            backgroundColor: '#fff'
+            backgroundColor: '#fff',
+            fontFamily: 'Fira Sans'
         }}
         defaultActiveKey="1"
         centered
@@ -27,7 +28,7 @@ export default () => <>
                 key: `3`,
                 children: NonAlcohol()
             },
-       ]}
+        ]}
     />
 </>
 
