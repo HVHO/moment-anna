@@ -8,11 +8,7 @@ import logo from './assets/logo.svg'; // SVG 파일 경로에 맞게 변경
 const {Header, Footer, Content} = Layout;
 
 const headerStyle: React.CSSProperties = {
-    textAlign: 'center',
     height: 64,
-    paddingInline: 48,
-    fontSize: 32,
-    fontFamily: 'NanumSquareB',
     backgroundColor: '#fff'
 };
 
@@ -21,7 +17,7 @@ const footerStyle: React.CSSProperties = {
     height: 64,
     paddingInline: 48,
     fontSize: 12,
-    fontFamily: 'NanumSquareB',
+    fontFamily: 'MaruBuri',
     color: 'rgba(0,0,0,0.22)',
     backgroundColor: '#fff'
 };
@@ -32,7 +28,7 @@ export default () => (
             <Header style={headerStyle}>
                 <Flex vertical justify={'center'} align={'center'}>
                     <img src={logo} style={{width: '256px', height: 'auto'}}/>
-                    <Typography.Text disabled style={{fontFamily: 'Fira Sans'}}>Savor Every Special Moment with a Cocktail to Remember.</Typography.Text>
+                    <Typography.Text disabled style={{fontFamily: 'Fira Sans', fontSize: 'clamp(8px, 2.8vw, 12px)'}}>Savor Every Special Moment with a Cocktail to Remember.</Typography.Text>
                 </Flex>
             </Header>
             <Content>

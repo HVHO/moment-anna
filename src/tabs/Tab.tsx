@@ -7,7 +7,7 @@ export default () => <>
     <Tabs
         style={{
             backgroundColor: '#fff',
-            fontFamily: 'Fira Sans'
+            fontFamily: 'MaruBuri'
         }}
         defaultActiveKey="1"
         centered

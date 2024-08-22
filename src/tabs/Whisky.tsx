@@ -10,14 +10,14 @@ export default () => {
     return <List
         itemLayout="horizontal"
         dataSource={menu.list}
-        style={{paddingLeft: 24, paddingRight: 24}}
+        style={{paddingLeft: 24, paddingRight: 24, fontFamily: 'MaruBuri'}}
         renderItem={(item, index) => (
             <List.Item>
                 <List.Item.Meta
                     title={item.name}
                     description={item.description}
                 />
-                <div style={{fontWeight:"bold"}}>{item.price}</div>
+                <div style={{fontWeight: "bold"}}>{item.price}</div>
             </List.Item>
         )}
     />

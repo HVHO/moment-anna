@@ -9,7 +9,7 @@ export default () => {
     return <List
         itemLayout="horizontal"
         dataSource={menu.list}
-        style={{paddingLeft: 24, paddingRight: 24}}
+        style={{paddingLeft: 24, paddingRight: 24, fontFamily: 'MaruBuri'}}
         renderItem={(item, index) => (
             <List.Item>
                 <List.Item.Meta
